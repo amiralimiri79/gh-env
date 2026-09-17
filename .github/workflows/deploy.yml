@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.fm2zeh7.mongodb.net
-      MONGODB_USERNAME: amiralimiri3100_db_user
-      MONGODB_PASSWORD: vB2Lks7tARsCeM5e
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 3000
     steps:
       - name: Get Code
